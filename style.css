@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141d2f;
+  color: white;
+}
+
+#topDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#darkmodeBtn {
+  display: flex;
+  align-items: center;
+  border: none;
+  color: white;
+  background-color: #141d2f;
+  gap: 1rem;
+}
+#topDiv h1 {
+  font-family: Space Mono;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+#darkmodeBtn {
+  font-family: Space Mono;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+  text-align: right;
+}
+#content1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+}
+#searchDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  background-color: #1e2a47;
+  padding: 2% 5% 2% 5%;
+  border-radius: 15px;
+  margin-top: 2rem;
+}
+#searchDiv i {
+  color: #0079ff;
+  font-size: 20px;
+}
+#searchDiv input {
+  color: #fff;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-family: Space Mono;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+#searchBtn {
+  background-color: #0079ff;
+  color: #ffff;
+  border: none;
+  border-radius: 15px;
+  padding: 5%;
+  font-family: Space Mono;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+#content3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+#DataContentDiv {
+  border-radius: 15px;
+  padding: 5%;
+  background-color: #1e2a47;
+}
+header {
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1.188rem;
+
+  border-radius: 15px;
+}
+#userimg {
+  width: 4.375rem;
+  height: 4.375rem;
+  border-radius: 50%;
+}
+#headerTextDiv {
+  display: flex;
+  flex-direction: column;
+}
+#headerTextDiv h1 {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+#headerTextDiv span {
+  font-family: Space Mono;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #0079ff;
+  text-decoration: none;
+}
+#headerTextDiv p {
+  font-family: Space Mono;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+#infoDiv p {
+  font-family: Space Mono;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+#infoDiv {
+  padding: 5%;
+}
+#infoSocialMediaDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #141d2f;
+  border-radius: 15px;
+}
+#infos {
+  padding: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#gottenInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#gottenInfo span:first-child {
+  font-family: Space Mono;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+#gottenInfo span:last-child {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+#additionalInfoDiv {
+  margin-top: 1.5rem;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#additionalInfoDiv span {
+  font-family: Space Mono;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  color: #ffff;
+}
+#additionalInfoDiv i {
+  font-size: 20px;
+}
+#noSpan {
+  
+  font-family: Space Mono;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #F74646;
+  display: none;
+}
+#headerTextDiv span{
+  
+}
+
+@media (width > 767px) {
+  #topDiv {
+    justify-content: space-between;
+    padding: 5%;
+  }
+  #searchBtn {
+    padding: 3%;
+    border-radius: 10px;
+  }
+  #userimg {
+    width: 7.313rem;
+    height: 7.313rem;
+  }
+  #headerTextDiv h1 {
+    font-family: Space Mono;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  #headerTextDiv span {
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  #headerTextDiv p {
+    font-family: Space Mono;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  #infoDiv p {
+    font-family: Space Mono;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  #gottenInfo span:first-child {
+    font-family: Space Mono;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  #gottenInfo span:last-child {
+    font-family: Space Mono;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  #additionalInfoDiv span {
+    font-family: Space Mono;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  #additionalInfoDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #content3 {
+    justify-content: center;
+  }
+  #searchDiv input {
+    font-family: Space Mono;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+}
+@media (width > 1023px) {
+  #topDiv {
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+    padding: 0;
+  }
+  #searchDiv {
+    margin: 0;
+  }
+  #infoDiv,
+  header,
+  #content3,
+  #content1,
+  #searchDiv {
+    width: 100%;
+    padding: 1%;
+  }
+  #searchBtn {
+    padding: 1%;
+  }
+  #content1 {
+    padding: 1% 14% 1% 14% !important;
+  }
+  #searchDiv input {
+    width: 100%;
+    font-family: Space Mono;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+}
