@@ -14,10 +14,11 @@ searchBtn.addEventListener("click", () => {
     fetch(`https://api.github.com/users/${searchInput.value}`)
       .then((item) => item.json())
       .then((item) => {
-        
         if (item.message) {
           notfound.style.display = "block";
-        } else{
+        } else {
+          
+          notfound.style.display = "none";
           if (item.location === null || item.location === "") {
             item.location = "Not Available";
           }
@@ -47,41 +48,101 @@ searchBtn.addEventListener("click", () => {
             />
           </div>
           <div id="headerTextDiv">
-            <h1>${item.name}</h1>
+            <h1 id="h1">${item.name}</h1>
             <span href="">@${item.html_url.slice(19)}</span>
-            <p> joined at ${approvedDate}</p>
+            <p id="p"> joined at ${approvedDate}</p>
           </div>      
         </header>
         <div id="infoDiv">
-          <p>
+          <p id="infoP">
             ${item.bio}
           </p>
         </div>
         <div id="infoSocialMediaDiv">
             <div id="infos">
                 <div id="gottenInfo">
-                    <span>Repos</span>
-                    <span>${item.public_repos}</span>
+                    <span id="firstSpan">Repos</span>
+                    <span id="secodSpan">${item.public_repos}</span>
                 </div>
                 <div id="gottenInfo">
-                    <span>Followers</span>
-                    <span>${item.followers}</span>
+                    <span  id="firstSpan">Followers</span>
+                    <span id="secodSpan">${item.followers}</span>
                 </div>
                 <div id="gottenInfo">
-                    <span>Following</span>
-                    <span>${item.following}</span>
+                    <span id="firstSpan">Following</span>
+                    <span id="secodSpan">${item.following}</span>
                 </div>
             </div>
         </div>
         <div id="additionalInfoDiv">
-            <span id="a" href=""><i class="fa-solid fa-location-dot"></i>${item.location}</span>
-            <span id="a" href=""><i class="fa-solid fa-link"></i>${item.blog}</span>
-            <span id="a" href=""><i class="fa-brands fa-twitter"></i>${item.twitter_username}</span>
-            <span id="a" href=""><i class="fa-solid fa-building"></i>${item.company}</span>
+            <span id="a" href=""><i id="i" class="fa-solid fa-location-dot"></i>${
+              item.location
+            }</span>
+            <span id="a" href=""><i id="i" class="fa-solid fa-link"></i>${
+              item.blog
+            }</span>
+            <span id="a" href=""><i id="i" class="fa-brands fa-twitter"></i>${
+              item.twitter_username
+            }</span>
+            <span id="a" href=""><i id="i" class="fa-solid fa-building"></i>${
+              item.company
+            }</span>
         </div>
             `;
+            
         }
       });
+      
   }
   fetchData();
 });
+
+//sad chavsva? function darkmode() {
+//   const darkmodeBtn = document.querySelector("#darkmodeBtn");
+//   const moon = document.querySelector("#img2");
+//   const sun = document.querySelector("#img")
+
+
+//   darkmodeBtn.addEventListener("click", () => {
+//     const body = document.body;
+//     body.classList.toggle("body");
+//     const logo = document.querySelector("#logoH1");
+//     logo.classList.toggle("logo");
+//     const lightBtn = document.querySelector("#darkmodeBtn");
+//     lightBtn.classList.toggle("darkmodeBtn");
+//     const input = document.querySelector("#input");
+//     input.classList.toggle("input");
+//     const searchDiv = document.querySelector("#searchDiv");
+//     searchDiv.classList.toggle("searchDiv");
+//     const dataContentDiv = document.getElementById("DataContentDiv");
+//     dataContentDiv.classList.toggle("dataContentDiv");
+//     const headerh1 = document.querySelector("#h1")
+//     headerh1.classList.toggle("headerH1")
+//     const headerp = document.querySelector("#p")
+//     headerp.classList.toggle("headerP")
+//     const infoP = document.querySelector("#infoP")
+//     infoP.classList.toggle("infoP")
+//     const infoSocialMediaDiv = document.querySelector("#infoSocialMediaDiv")
+//     infoSocialMediaDiv.classList.toggle("infoSocialMediaDiv")
+//     const spanfirst = document.querySelectorAll("#firstSpan")
+//     spanfirst.forEach(sum => {
+//       sum.classList.toggle("spanfirst")
+//     })
+//     const spanLast = document.querySelectorAll("#secodSpan")
+//     spanLast.forEach(span => {
+//       span.classList.toggle("spanLast")
+//     })
+//     const additionalInfoDivSpan = document.querySelectorAll("#a")
+//     additionalInfoDivSpan.forEach(span => {
+//       span.classList.toggle("additionalInfoDivSpan")
+//     })
+//     const i = document.querySelectorAll("#i")
+//     i.forEach(is => {
+//       is.classList.toggle('additionalInfoDivI')
+//     })
+    
+      
+//   });
+// }
+
+// darkmode();
