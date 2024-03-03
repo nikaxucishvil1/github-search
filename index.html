@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="darkmode.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,7 +22,8 @@
   <body>
     <div id="topDiv">
       <h1 id="logoH1">devfinder</h1>
-      <button id="darkmodeBtn">LIGHT <img src="/img/sun.svg" alt="" id="img" /> <img src="/img/moon.svg" alt="" id="img2"></button>
+      <div id="onclickDiv" style="display: flex; align-items: center; gap: 10px; justify-content: center;"><button id="darkmodeBtn">LIGHT</button>
+        <img id="img" src="/img/sun.svg" alt=""></div>
     </div>
     <div id="content1">
       <div id="searchDiv">
@@ -36,8 +35,8 @@
     </div>
    <div id="content3">
 
-   
-    <!-- <div id="DataContentDiv">
+  
+    <div id="DataContentDiv">
         <header>
           <div id="headerImg">
             <img
@@ -47,13 +46,13 @@
             />
           </div>
           <div id="headerTextDiv">
-            <h1>The Octocat</h1>
-            <a href="">@octocat</a>
-            <p>Joined 25 Jan 2011</p>
+            <h1 id="h1">The Octocat</h1>
+            <span id="linkedspan">@Octocat</span>
+            <p id="p">Joined 25 Jan 2011</p>
           </div>      
         </header>
         <div id="infoDiv">
-          <p>
+          <p id="infoP">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
             odio. Quisque volutpat mattis eros.
           </p>
@@ -61,26 +60,26 @@
         <div id="infoSocialMediaDiv">
             <div id="infos">
                 <div id="gottenInfo">
-                    <span>Repos</span>
-                    <span>8</span>
+                    <span id="gottenInfoFirstChild">Repos</span>
+                    <span id="secodSpan" class="firstSpan">8</span>
                 </div>
                 <div id="gottenInfo">
-                    <span>Followers</span>
-                    <span>3938</span>
+                    <span id="gottenInfoFirstChild">Followers</span>
+                    <span id="secodSpan" class="secondSpan">3938</span>
                 </div>
                 <div id="gottenInfo">
-                    <span>Following</span>
-                    <span>9</span>
+                    <span id="gottenInfoFirstChild">Following</span>
+                    <span id="secodSpan" class="thirdSpan">9</span>
                 </div>
             </div>
         </div>
         <div id="additionalInfoDiv">
-            <span id="a" href=""><i class="fa-solid fa-location-dot"></i>San Francisco</span>
-            <span id="a" href=""><i class="fa-solid fa-link"></i>https://github.blog</span>
-            <span id="a" href=""><i class="fa-brands fa-twitter"></i>Not Available</span>
-            <span id="a" href=""><i class="fa-solid fa-building"></i>@github</span>
+            <span class="location" id="a" href=""><i class="fa-solid fa-location-dot"></i>San Francisco</span>
+            <span class="blog" id="a" href=""><i class="fa-solid fa-link"></i>https://github.blog</span>
+            <span class="twitterUserName" id="a" href=""><i class="fa-brands fa-twitter"></i>Not Available</span>
+            <span class="company" id="a" href=""><i class="fa-solid fa-building"></i>@github</span>
         </div>
-   </div> -->
+   </div>
    <script type="module" src="app.js"></script>
   </body>
 </html>
